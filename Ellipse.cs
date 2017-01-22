@@ -19,20 +19,12 @@ namespace Drawing
             Console.WriteLine("Enter the Length of the Ellipse :- ");
             int Length = Convert.ToInt16(Console.ReadLine());
             Console.WriteLine("Enter the height of the Ellipse :- ");
-            int Breadth = Convert.ToInt16(Console.ReadLine());
+            int Height = Convert.ToInt16(Console.ReadLine());
+
+            Display disp = new Display();
+            disp.Ellipse(xCoordinate, yCoordinate, Length, Height);
 
 
-            Console.Clear();
-
-            for (int index = 0; index < yCoordinate; index++)
-                Console.WriteLine("");
-            for (int index = 0; index < xCoordinate; index++)
-                Console.Write(" ");
-            Console.WriteLine("Shape :- Ellipse");
-            Console.WriteLine("Location:- x co-ordinate = {0} cms", xCoordinate);
-            Console.WriteLine("Location:- y co-ordinate = {0} cms", yCoordinate);
-            Console.WriteLine("The Length of the Ellipse = {0} cms", Length);
-            Console.WriteLine("The height of the Ellipse = {0} cms", Breadth);
         }
     }
 }
