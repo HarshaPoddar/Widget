@@ -37,7 +37,7 @@ namespace Drawing
                 Console.WriteLine("");
             for (int index = 0; index < xCoordinate; index++)
                 Console.Write(" ");
-            Console.WriteLine("Shape :- Ellipse");
+            Console.WriteLine("Shape :- Square");
             Console.WriteLine("Location:- x co-ordinate = {0} cms", xCoordinate);
             Console.WriteLine("Location:- y co-ordinate = {0} cms", yCoordinate);
             Console.WriteLine("The Length of the Square = {0} cms :- ", length);
@@ -60,7 +60,7 @@ namespace Drawing
                 Console.WriteLine("");
             for (int index = 0; index < xCoordinate; index++)
                 Console.Write(" ");
-            Console.WriteLine("Shape :- Ellipse");
+            Console.WriteLine("Shape :- Circle");
             Console.WriteLine("Location:- x co-ordinate = {0} cms", xCoordinate);
             Console.WriteLine("Location:- y co-ordinate = {0} cms", yCoordinate);
             Console.WriteLine("The Diameter of the Circle = {0} cms", diameter);
