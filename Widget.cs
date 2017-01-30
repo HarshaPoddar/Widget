@@ -7,14 +7,14 @@ using System.Drawing;
 
 namespace Drawing
 {
-    class Execute
+    class Widget
     {
         static void Main(string[] args)
         {
             Console.Write("Do you want to add a widget?(Y/N) :- ");
             string add = Console.ReadLine();
-            string Temporary = "Y";
-            while (Temporary == "Y" || Temporary == "y")
+            string TemporaryCounter = "Y";
+            while (TemporaryCounter == "Y" || TemporaryCounter == "y")
             {
                 Console.Clear();
                 if (add == "Y" || add == "y")
@@ -27,40 +27,40 @@ namespace Drawing
                     Console.WriteLine("4.Textbox ");
                     Console.WriteLine("5.Exit");
                     Console.WriteLine("");
-                    string Answer = Console.ReadLine();
-                    if (Answer == "1")
+                    string Shape = Console.ReadLine();
+                    if (Shape == "1") //Rectangle
                     {
                         Rectangle obj = new Drawing.Rectangle();
                         obj.Main();
                     }
-                    else if (Answer == "2")
+                    else if (Shape == "2")   //Square
                     {
                         Square obj = new Drawing.Square();
                         obj.Main();
                     }
-                    else if (Answer == "3")
+                    else if (Shape == "3")   //Circle
                     {
                         Circle obj = new Drawing.Circle();
                         obj.Main();
 
                     }
-                    else if (Answer == "4")
+                    else if (Shape == "4")   //Textbox
                     {
                         Textbox obj = new Textbox();
                         obj.Main();
 
                     }
-                    else if (Answer == "5")
+                    else if (Shape == "5") // exit
                     {
                         add = "N";
-                        continue;
+                        break; 
                     }
                     else
                     {
                         Console.WriteLine("Wrong Entry! Try Again?");
                         Console.WriteLine("Do you want to add a widget?(Y/N) :-");
                         add = Console.ReadLine();
-                        continue;
+                        break;
                     }
                     Console.Write("Do you want to add another widget?(Y/N) :- ");
                     add = Console.ReadLine();
@@ -83,7 +83,7 @@ namespace Drawing
                     continue;
                 }
 
-                Temporary = add;
+                TemporaryCounter = add;
             }
             Console.ReadLine();
         }
