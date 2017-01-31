@@ -30,24 +30,24 @@ namespace Drawing
                     string Shape = Console.ReadLine();
                     if (Shape == "1") //Rectangle
                     {
-                        Rectangle obj = new Drawing.Rectangle();
-                        obj.Main();
+                        Rectangle rectangle = new Drawing.Rectangle();
+                        rectangle.Main();
                     }
                     else if (Shape == "2")   //Square
                     {
-                        Square obj = new Drawing.Square();
-                        obj.Main();
+                        Square square = new Drawing.Square();
+                        square.Main();
                     }
                     else if (Shape == "3")   //Circle
                     {
-                        Circle obj = new Drawing.Circle();
-                        obj.Main();
+                        Circle circle = new Drawing.Circle();
+                        circle.Main();
 
                     }
                     else if (Shape == "4")   //Textbox
                     {
-                        Textbox obj = new Textbox();
-                        obj.Main();
+                        Textbox textbox = new Textbox();
+                        textbox.Main();
 
                     }
                     else if (Shape == "5") // exit
