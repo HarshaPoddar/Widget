@@ -11,15 +11,15 @@ namespace Drawing
     {
         static void Main(string[] args)
         {
-            Console.Write("Do you want to add a widget?(Y/N) :- ");
-            string add = Console.ReadLine();
+            Console.Write("Do you want to addOption a widget?(Y/N) :- ");
+            string addOption = Console.ReadLine();
             string TemporaryCounter = "Y";
             while (TemporaryCounter == "Y" || TemporaryCounter == "y")
             {
                 Console.Clear();
-                if (add == "Y" || add == "y")
+                if (addOption == "Y" || addOption == "y")
                 {
-                    Console.WriteLine("Which widget do you want to add?");
+                    Console.WriteLine("Which widget do you want to addOption?");
                     Console.WriteLine("(Answer just the number corresponding to the widget) ");
                     Console.WriteLine("1.Rectangle ");
                     Console.WriteLine("2.Square ");
@@ -52,25 +52,25 @@ namespace Drawing
                     }
                     else if (Shape == "5") // exit
                     {
-                        add = "N";
+                        addOption = "N";
                         break; 
                     }
                     else
                     {
                         Console.WriteLine("Wrong Entry! Try Again?");
-                        Console.WriteLine("Do you want to add a widget?(Y/N) :-");
-                        add = Console.ReadLine();
+                        Console.WriteLine("Do you want to addOption a widget?(Y/N) :-");
+                        addOption = Console.ReadLine();
                         break;
                     }
-                    Console.Write("Do you want to add another widget?(Y/N) :- ");
-                    add = Console.ReadLine();
+                    Console.Write("Do you want to addOption another widget?(Y/N) :- ");
+                    addOption = Console.ReadLine();
                     continue;
                 }
 
-                else if (add == "N" || add == "n")
+                else if (addOption == "N" || addOption == "n")
                 {
                     Console.WriteLine("Alright!");
-                    add = "N";
+                    addOption = "N";
                     break;
                 }
                 else
@@ -78,12 +78,12 @@ namespace Drawing
                     Console.Clear();
 
                     Console.WriteLine("Wrong entry! Please enter again!");
-                    Console.Write("Do you want to add another widget?(Y/N) :- ");
-                    add = Console.ReadLine();
+                    Console.Write("Do you want to addOption another widget?(Y/N) :- ");
+                    addOption = Console.ReadLine();
                     continue;
                 }
 
-                TemporaryCounter = add;
+                TemporaryCounter = addOption;
             }
             Console.ReadLine();
         }
